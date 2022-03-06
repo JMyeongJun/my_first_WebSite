@@ -1,0 +1,55 @@
+body{
+  margin:0;
+}
+/* 선택자 우선순위
+  tag < class < id
+  같은 형태의 선택자인 경우 가장 마지막 선택자가 우선 순위 높음!!*/
+/* # id 선택자(selector) */
+/* #active {
+  color: red;
+} */
+/* . class 선택자(selector) */
+/* .saw {
+  color: gray;
+} */
+a{
+  color:black;
+  text-decoration: none;
+}
+h1{
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr
+}
+#grid ol{
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding:20px;
+  padding-left: 33px;
+}
+#article{
+  padding-left: 25px;
+}
+@media (max-width:700px) {
+  #grid{
+    display: block;
+  }
+  #grid ol{
+    border-right: none;
+  }
+  h1{
+    border-bottom: none;
+  }
+}
+img{
+  width:160px;
+  float: right;
+  margin: 10px;
+}
